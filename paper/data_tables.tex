@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{mathptmx}
+\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+\usepackage{titling}
+\usepackage{setspace}
+
+\pretitle{\begin{center}\Huge\bfseries}
+    \posttitle{\par\end{center}\vskip 0.5em}
+    \preauthor{\begin{center}\Large\ttfamily}
+    \postauthor{\end{center}}
+    \predate{\par\large\centering}
+    \postdate{\par}
+
+\doublespacing
+\begin{document}
+
+\begin{center}
+    \section*{RAW DATA STRUCTURE APPENDIX}
+\end{center}
+
+\subsection*{Publications Network Table}
+
+The publication Network Table contains the information of
+the publications interactions. It contains the publications
+variables, an the identifier of the publication and 
+the publication that replicates the other. 
+
+It is the first part of the table, and represent the initial
+node of the network because each variable contains the 
+letter \textit{i} before the varaible name. The other part of
+the table is, uses \textit{o} before the varaible name:
+
+It is possible to have multiples authors from different
+institutions, however, those observations will be different
+and the iid to \textbf{iid}. The variable \textbf{pid} makes
+a publication unique. Moreover, it is possible to see the
+same pid for more than one iid in the table. At the
+beginning of the table will be add an interaction id.
+This makes the observation unique over the hole dataset.
+
+The \textbf{code} variables refers to the industrial
+classification of the paper. Those are the most similar
+industry to the paper information, and the investigator 
+can see the matching process on the \textit{PUBLICATIONS
+DATA APPENDIX}.
+
+The other variables are to show the location of the
+institution, or to show the author of the publication. The
+\textbf{iauthor:} The author of the publication. It could 
+exists more than one iiauthor per ipid
+
+\subsection*{Industrial Network}
+
+The industrial network contains data from the ecuadorian 
+service taxation institutions:
+\textit{Servicio de Rentas Internas} (SRI). The observations
+are aggregated by ecuadorian province, and the table shows
+the year and the product ISIC4 code. As in the publications
+table, the table divide the variables into \textit{i,o} as
+input-output
+
+
+\end{document}

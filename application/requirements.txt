@@ -1,0 +1,8 @@
+numpy
+python-dotenv
+Flask
+pandas
+dash
+dash-bootstrap-components
+scikit-learn
+python-dateutil

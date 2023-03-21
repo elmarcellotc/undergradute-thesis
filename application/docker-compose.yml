@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  my-service:
+    image: mc_undergraduate_thesis:latest
+    build: .
+    ports:
+      - "2023:2023"
+    volumes:
+      - .:/app
