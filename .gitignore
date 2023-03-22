@@ -1,4 +1,6 @@
 *.synctex
+complete.csv
+similarity.csv
 *.env
 *.aux
 *.log
