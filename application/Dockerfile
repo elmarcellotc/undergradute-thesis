@@ -7,6 +7,7 @@ WORKDIR /app
 COPY requirements.txt /
 RUN python -m pip install --upgrade pip
 RUN pip install --default-timeout=120 -r /requirements.txt
+RUN python -m spacy download en_core_web_lg
 
 # Copy app folder to app folder in container
 COPY . .
