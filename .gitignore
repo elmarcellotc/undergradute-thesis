@@ -1,0 +1,5 @@
+*.env
+*.aux
+*.log
+*.gz
+*.Rhistory
