@@ -1,11 +1,10 @@
-### Old
+### Methodology
 
-- Finish the replication paper, show it to Pablo, and then ask for the thesis data.
-- Ask Pablo for change the thesis meetings to mondays, and Caro to change update meetings to tuesdays
+- Read the SpaCy library documentation. Use it to write down the appendix
+- Search for methodologies using people to generate the cutoff of the similarity in a laboratory
+- Also, search the way to do it by using a free chatGPT API
 
-### New
+### Coding
 
-- Search for Networks Science de Bararbasi
-- Finish matching.
-- Ask Pablo if would be necessary to first calibrate a model with the international data, and then test it with the national data.
-  The reason is that the ISIC4 code contains 700 products, whereas the national codes only contains 400 products
+- Use only a small selection of the similarity dataframe on the documentation section.
+then, generate a python script that work with the hole dataframe
