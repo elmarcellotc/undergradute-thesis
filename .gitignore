@@ -1,5 +1,6 @@
 *.synctex
-application/treatment_data/similarity.csv
+*.csv
+!application/treatment_data/complete.csv
 *.env
 *.aux
 *.log
