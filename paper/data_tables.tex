@@ -3,6 +3,7 @@
 \usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
 \usepackage{titling}
 \usepackage{setspace}
+\usepackage{booktabs}
 
 \pretitle{\begin{center}\Huge\bfseries}
     \posttitle{\par\end{center}\vskip 0.5em}
@@ -17,6 +18,60 @@
 \begin{center}
     \section*{RAW DATA STRUCTURE APPENDIX}
 \end{center}
+
+\subsection*{Scopus Data Table}
+
+The main contribution of this working paper
+is on the research data. The available 
+research data of the Ecuador give us the
+paper title, the authors, the year of
+publication, and the university
+affiliation. Using those variables, we
+can build a dataset with the location
+of the publication, and the available text.
+The available text is necessary to classify
+the paper as a industry based on the ISIC4
+code. The following table is an example
+of the raw publication dataset, we add
+the ID variable as identifier of each paper\\
+
+
+\begin{tabular}{llllll}
+\toprule
+ID & Year & Province & City & Authors & Text \\
+\midrule
+ECOTEC1 & 2018 & GUAYAS & GUAYAQUIL & Espinoza... & Ethi... \\
+ECOTEC25 & 2018 & GUAYAS & GUAYAQUIL & Loor P... & Anal... \\
+EPN23 & 2018 & PICHINCHA & QUITO & Silva M.... & Biopol... \\
+EPN41 & 2018 & PICHINCHA & QUITO & Douillet... & Revisiti... \\
+EPN61 & 2018 & PICHINCHA & QUITO & Sirunyan A.M... & Obser... \\
+\bottomrule
+\end{tabular}
+
+\subsection*{International Standard Industrial Classification}
+
+This is the common code used in economics
+to classify an economic activity 
+
+\subsection*{The Similarity Table}
+
+The similarity say how similar is each paper
+to each ISIC4 category. The similarity is a
+value between 0 and 1, and this relationship
+is got by SpaCy Python Library. The table 3
+shows the first 10 values of the similarity
+
+\begin{tabular}{lrrrr}
+\toprule
+ID & A0150 & C1074 & C1420 & C2021 \\
+\midrule
+ECOTEC0 & 0.317848 & 0.548013 & 0.446434 & 0.549180 \\
+ECOTEC25 & 0.320490 & 0.610176 & 0.641187 & 0.616872 \\
+EPN23 & 0.387861 & 0.613222 & 0.596166 & 0.638505 \\
+EPN41 & 0.507463 & 0.829084 & 0.650273 & 0.792887 \\
+EPN61 & 0.425886 & 0.675037 & 0.567544 & 0.686002 \\
+\bottomrule
+\end{tabular}
 
 \subsection*{Publications Network Table}
 
@@ -58,6 +113,5 @@ are aggregated by ecuadorian province, and the table shows
 the year and the product ISIC4 code. As in the publications
 table, the table divide the variables into \textit{i,o} as
 input-output
-
 
 \end{document}
