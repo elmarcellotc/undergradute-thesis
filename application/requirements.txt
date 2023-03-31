@@ -7,3 +7,4 @@ dash-bootstrap-components
 scikit-learn
 python-dateutil
 spacy
+python-docx

@@ -5,3 +5,5 @@ application/treatment_data/similarity.csv
 *.log
 *.gz
 *.Rhistory
+*.docx
+*.jpg
